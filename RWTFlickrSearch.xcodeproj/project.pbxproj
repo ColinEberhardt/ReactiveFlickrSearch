@@ -7,20 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		728550B5193E52740032A754 /* CETableViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 728550B4193E52740032A754 /* CETableViewBindingHelper.m */; };
 		72E40170192BFFCE00354806 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E4016F192BFFCE00354806 /* Foundation.framework */; };
 		72E40172192BFFCE00354806 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E40171192BFFCE00354806 /* CoreGraphics.framework */; };
 		72E40174192BFFCE00354806 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E40173192BFFCE00354806 /* UIKit.framework */; };
 		72E4017A192BFFCE00354806 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72E40178192BFFCE00354806 /* InfoPlist.strings */; };
 		72E4017C192BFFCE00354806 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E4017B192BFFCE00354806 /* main.m */; };
 		72E40180192BFFCE00354806 /* RWTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E4017F192BFFCE00354806 /* RWTAppDelegate.m */; };
-		72E40183192BFFCE00354806 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E40181192BFFCE00354806 /* Main.storyboard */; };
-		72E40186192BFFCE00354806 /* RWTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E40185192BFFCE00354806 /* RWTViewController.m */; };
 		72E40188192BFFCE00354806 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E40187192BFFCE00354806 /* Images.xcassets */; };
 		72E4018F192BFFCE00354806 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E4018E192BFFCE00354806 /* XCTest.framework */; };
 		72E40190192BFFCE00354806 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E4016F192BFFCE00354806 /* Foundation.framework */; };
 		72E40191192BFFCE00354806 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E40173192BFFCE00354806 /* UIKit.framework */; };
 		72E40199192BFFCE00354806 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72E40197192BFFCE00354806 /* InfoPlist.strings */; };
 		72E4019B192BFFCE00354806 /* RWTFlickrSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E4019A192BFFCE00354806 /* RWTFlickrSearchTests.m */; };
+		72E401B2192C03AB00354806 /* comment.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E401A5192C03AB00354806 /* comment.png */; };
+		72E401B3192C03AB00354806 /* fave.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E401A6192C03AB00354806 /* fave.png */; };
+		72E401B4192C03AB00354806 /* RWTFlickrSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E401A8192C03AB00354806 /* RWTFlickrSearchViewController.m */; };
+		72E401B5192C03AB00354806 /* RWTFlickrSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E401A9192C03AB00354806 /* RWTFlickrSearchViewController.xib */; };
+		72E401B7192C03AB00354806 /* RWTRecentSearchItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E401AD192C03AB00354806 /* RWTRecentSearchItemTableViewCell.m */; };
+		72E401B8192C03AB00354806 /* RWTRecentSearchItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E401AE192C03AB00354806 /* RWTRecentSearchItemTableViewCell.xib */; };
+		72E401B9192C03AB00354806 /* RWTSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E401B0192C03AB00354806 /* RWTSearchResultsViewController.m */; };
+		72E401BA192C03AB00354806 /* RWTSearchResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E401B1192C03AB00354806 /* RWTSearchResultsViewController.xib */; };
+		72E401BE192C050F00354806 /* RWTSearchResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E401BC192C050F00354806 /* RWTSearchResultsTableViewCell.m */; };
+		72E401BF192C050F00354806 /* RWTSearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E401BD192C050F00354806 /* RWTSearchResultsTableViewCell.xib */; };
+		A60F282A374641B387052C92 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8CB3F8B1184D979703C3ED /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		728550B2193E52740032A754 /* CEReactiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEReactiveView.h; sourceTree = "<group>"; };
+		728550B3193E52740032A754 /* CETableViewBindingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETableViewBindingHelper.h; sourceTree = "<group>"; };
+		728550B4193E52740032A754 /* CETableViewBindingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CETableViewBindingHelper.m; sourceTree = "<group>"; };
 		72E4016C192BFFCE00354806 /* RWTFlickrSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWTFlickrSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E4016F192BFFCE00354806 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		72E40171192BFFCE00354806 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,15 +57,28 @@
 		72E4017D192BFFCE00354806 /* RWTFlickrSearch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RWTFlickrSearch-Prefix.pch"; sourceTree = "<group>"; };
 		72E4017E192BFFCE00354806 /* RWTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTAppDelegate.h; sourceTree = "<group>"; };
 		72E4017F192BFFCE00354806 /* RWTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWTAppDelegate.m; sourceTree = "<group>"; };
-		72E40182192BFFCE00354806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		72E40184192BFFCE00354806 /* RWTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTViewController.h; sourceTree = "<group>"; };
-		72E40185192BFFCE00354806 /* RWTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWTViewController.m; sourceTree = "<group>"; };
 		72E40187192BFFCE00354806 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		72E4018D192BFFCE00354806 /* RWTFlickrSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RWTFlickrSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E4018E192BFFCE00354806 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		72E40196192BFFCE00354806 /* RWTFlickrSearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RWTFlickrSearchTests-Info.plist"; sourceTree = "<group>"; };
 		72E40198192BFFCE00354806 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		72E4019A192BFFCE00354806 /* RWTFlickrSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchTests.m; sourceTree = "<group>"; };
+		72E401A5192C03AB00354806 /* comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comment.png; sourceTree = "<group>"; };
+		72E401A6192C03AB00354806 /* fave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fave.png; sourceTree = "<group>"; };
+		72E401A7192C03AB00354806 /* RWTFlickrSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearchViewController.h; sourceTree = "<group>"; };
+		72E401A8192C03AB00354806 /* RWTFlickrSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchViewController.m; sourceTree = "<group>"; };
+		72E401A9192C03AB00354806 /* RWTFlickrSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWTFlickrSearchViewController.xib; sourceTree = "<group>"; };
+		72E401AC192C03AB00354806 /* RWTRecentSearchItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTRecentSearchItemTableViewCell.h; sourceTree = "<group>"; };
+		72E401AD192C03AB00354806 /* RWTRecentSearchItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTRecentSearchItemTableViewCell.m; sourceTree = "<group>"; };
+		72E401AE192C03AB00354806 /* RWTRecentSearchItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWTRecentSearchItemTableViewCell.xib; sourceTree = "<group>"; };
+		72E401AF192C03AB00354806 /* RWTSearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTSearchResultsViewController.h; sourceTree = "<group>"; };
+		72E401B0192C03AB00354806 /* RWTSearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSearchResultsViewController.m; sourceTree = "<group>"; };
+		72E401B1192C03AB00354806 /* RWTSearchResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWTSearchResultsViewController.xib; sourceTree = "<group>"; };
+		72E401BB192C050F00354806 /* RWTSearchResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTSearchResultsTableViewCell.h; sourceTree = "<group>"; };
+		72E401BC192C050F00354806 /* RWTSearchResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSearchResultsTableViewCell.m; sourceTree = "<group>"; };
+		72E401BD192C050F00354806 /* RWTSearchResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWTSearchResultsTableViewCell.xib; sourceTree = "<group>"; };
+		7D8CB3F8B1184D979703C3ED /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34888D47890479B80FCDC96 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +89,7 @@
 				72E40172192BFFCE00354806 /* CoreGraphics.framework in Frameworks */,
 				72E40174192BFFCE00354806 /* UIKit.framework in Frameworks */,
 				72E40170192BFFCE00354806 /* Foundation.framework in Frameworks */,
+				A60F282A374641B387052C92 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +106,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		728550B1193E52510032A754 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				728550B2193E52740032A754 /* CEReactiveView.h */,
+				728550B3193E52740032A754 /* CETableViewBindingHelper.h */,
+				728550B4193E52740032A754 /* CETableViewBindingHelper.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		72E40163192BFFCE00354806 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +123,7 @@
 				72E40194192BFFCE00354806 /* RWTFlickrSearchTests */,
 				72E4016E192BFFCE00354806 /* Frameworks */,
 				72E4016D192BFFCE00354806 /* Products */,
+				A34888D47890479B80FCDC96 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +143,7 @@
 				72E40171192BFFCE00354806 /* CoreGraphics.framework */,
 				72E40173192BFFCE00354806 /* UIKit.framework */,
 				72E4018E192BFFCE00354806 /* XCTest.framework */,
+				7D8CB3F8B1184D979703C3ED /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,11 +151,12 @@
 		72E40175192BFFCE00354806 /* RWTFlickrSearch */ = {
 			isa = PBXGroup;
 			children = (
+				728550B1193E52510032A754 /* Util */,
+				72E401C1192C82CA00354806 /* Model */,
+				72E401C0192C82C100354806 /* ViewModel */,
+				72E401A4192C03AB00354806 /* View */,
 				72E4017E192BFFCE00354806 /* RWTAppDelegate.h */,
 				72E4017F192BFFCE00354806 /* RWTAppDelegate.m */,
-				72E40181192BFFCE00354806 /* Main.storyboard */,
-				72E40184192BFFCE00354806 /* RWTViewController.h */,
-				72E40185192BFFCE00354806 /* RWTViewController.m */,
 				72E40187192BFFCE00354806 /* Images.xcassets */,
 				72E40176192BFFCE00354806 /* Supporting Files */,
 			);
@@ -152,6 +192,41 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		72E401A4192C03AB00354806 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72E401BB192C050F00354806 /* RWTSearchResultsTableViewCell.h */,
+				72E401BC192C050F00354806 /* RWTSearchResultsTableViewCell.m */,
+				72E401BD192C050F00354806 /* RWTSearchResultsTableViewCell.xib */,
+				72E401A5192C03AB00354806 /* comment.png */,
+				72E401A6192C03AB00354806 /* fave.png */,
+				72E401A7192C03AB00354806 /* RWTFlickrSearchViewController.h */,
+				72E401A8192C03AB00354806 /* RWTFlickrSearchViewController.m */,
+				72E401A9192C03AB00354806 /* RWTFlickrSearchViewController.xib */,
+				72E401AC192C03AB00354806 /* RWTRecentSearchItemTableViewCell.h */,
+				72E401AD192C03AB00354806 /* RWTRecentSearchItemTableViewCell.m */,
+				72E401AE192C03AB00354806 /* RWTRecentSearchItemTableViewCell.xib */,
+				72E401AF192C03AB00354806 /* RWTSearchResultsViewController.h */,
+				72E401B0192C03AB00354806 /* RWTSearchResultsViewController.m */,
+				72E401B1192C03AB00354806 /* RWTSearchResultsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		72E401C0192C82C100354806 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		72E401C1192C82CA00354806 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72E4019E192BFFCE00354806 /* Build configuration list for PBXNativeTarget "RWTFlickrSearch" */;
 			buildPhases = (
+				752D8D77EC084BF48FDF1ABA /* Check Pods Manifest.lock */,
 				72E40168192BFFCE00354806 /* Sources */,
 				72E40169192BFFCE00354806 /* Frameworks */,
 				72E4016A192BFFCE00354806 /* Resources */,
+				4B9C8C9081C641A7BD7325E1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,8 +307,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				72E40188192BFFCE00354806 /* Images.xcassets in Resources */,
+				72E401B3192C03AB00354806 /* fave.png in Resources */,
+				72E401BF192C050F00354806 /* RWTSearchResultsTableViewCell.xib in Resources */,
+				72E401B8192C03AB00354806 /* RWTRecentSearchItemTableViewCell.xib in Resources */,
+				72E401B2192C03AB00354806 /* comment.png in Resources */,
 				72E4017A192BFFCE00354806 /* InfoPlist.strings in Resources */,
-				72E40183192BFFCE00354806 /* Main.storyboard in Resources */,
+				72E401B5192C03AB00354806 /* RWTFlickrSearchViewController.xib in Resources */,
+				72E401BA192C03AB00354806 /* RWTSearchResultsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,14 +327,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B9C8C9081C641A7BD7325E1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		752D8D77EC084BF48FDF1ABA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		72E40168192BFFCE00354806 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72E40186192BFFCE00354806 /* RWTViewController.m in Sources */,
 				72E40180192BFFCE00354806 /* RWTAppDelegate.m in Sources */,
+				72E401BE192C050F00354806 /* RWTSearchResultsTableViewCell.m in Sources */,
+				72E401B7192C03AB00354806 /* RWTRecentSearchItemTableViewCell.m in Sources */,
 				72E4017C192BFFCE00354806 /* main.m in Sources */,
+				72E401B9192C03AB00354806 /* RWTSearchResultsViewController.m in Sources */,
+				728550B5193E52740032A754 /* CETableViewBindingHelper.m in Sources */,
+				72E401B4192C03AB00354806 /* RWTFlickrSearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +400,6 @@
 				72E40179192BFFCE00354806 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		72E40181192BFFCE00354806 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				72E40182192BFFCE00354806 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		72E40197192BFFCE00354806 /* InfoPlist.strings */ = {
@@ -376,6 +487,7 @@
 		};
 		72E4019F192BFFCE00354806 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A34888D47890479B80FCDC96 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -389,6 +501,7 @@
 		};
 		72E401A0192BFFCE00354806 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A34888D47890479B80FCDC96 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -461,6 +574,7 @@
 				72E401A0192BFFCE00354806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72E401A1192BFFCE00354806 /* Build configuration list for PBXNativeTarget "RWTFlickrSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +583,7 @@
 				72E401A3192BFFCE00354806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
