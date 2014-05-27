@@ -8,10 +8,13 @@
 
 #import "RWTAppDelegate.h"
 #import "RWTFlickrSearchViewController.h"
+#import "RWTFlickrSearchViewModel.h"
+#import "RWTFlickrSearchViewController.h"
 
 @interface RWTAppDelegate ()
 
 @property (nonatomic, retain) UINavigationController *navigationController;
+@property (strong, nonatomic) RWTFlickrSearchViewModel *viewModel;
 
 @end
 
@@ -36,7 +39,8 @@
 }
 
 - (UIViewController *)createInitialViewController {
-  return [[RWTFlickrSearchViewController alloc] init];
+  self.viewModel = [RWTFlickrSearchViewModel new];
+  return [[RWTFlickrSearchViewController alloc] initWithViewModel:self.viewModel];
 }
 
 @end
