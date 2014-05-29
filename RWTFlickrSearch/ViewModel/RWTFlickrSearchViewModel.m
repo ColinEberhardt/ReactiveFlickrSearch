@@ -32,6 +32,19 @@
   [validSearchSignal subscribeNext:^(id x) {
     NSLog(@"search text is valid %@", x);
   }];
+  
+  self.executeSearch =
+    [[RACCommand alloc] initWithEnabled:validSearchSignal
+      signalBlock:^RACSignal *(id input) {
+        return  [self executeSearchSignal];
+      }];
+}
+
+-(RACSignal *)executeSearchSignal {
+  return [[[[RACSignal empty]
+           logAll]
+           delay:2.0]
+           logAll];
 }
 
 @end
