@@ -8,12 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import "RWTViewModelServices.h"
 
 @interface RWTFlickrSearchViewModel : NSObject
 
-@property (strong, nonatomic) NSString *searchText;
-@property (strong, nonatomic) NSString *title;
+- (instancetype)initWithServices:(id<RWTViewModelServices>)services;
 
 @property (strong, nonatomic) RACCommand *executeSearch;
+@property (strong, nonatomic) NSString *searchText;
+@property (strong, nonatomic) NSString *title;
 
 @end
