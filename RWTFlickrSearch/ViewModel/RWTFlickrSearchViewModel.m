@@ -49,8 +49,9 @@
 }
 
 -(RACSignal *)executeSearchSignal {
-  return [[self.services getFlickrSearchService]
-           flickrSearchSignal:self.searchText];
+  return [[[self.services getFlickrSearchService]
+           flickrSearchSignal:self.searchText]
+           logAll];
 }
 
 @end
