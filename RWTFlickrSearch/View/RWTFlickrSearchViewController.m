@@ -42,6 +42,17 @@
   RAC(self.viewModel, searchText) = self.searchTextField.rac_textSignal;
   
   self.searchButton.rac_command = self.viewModel.executeSearch;
+  
+  RAC(self.loadingIndicator, hidden) =
+    [self.viewModel.executeSearch.executing not];
+
+  RAC([UIApplication sharedApplication], networkActivityIndicatorVisible) =
+    self.viewModel.executeSearch.executing;
+
+  [self.viewModel.executeSearch.executionSignals
+    subscribeNext:^(id x) {
+      [self.searchTextField resignFirstResponder];
+    }];
 }
 
 @end
