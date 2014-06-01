@@ -12,6 +12,7 @@
 		728550A2193734090032A754 /* RWTViewModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 728550A1193734090032A754 /* RWTViewModelServicesImpl.m */; };
 		728550AA1938EB5E0032A754 /* RWTFlickrSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 728550A91938EB5E0032A754 /* RWTFlickrSearchResults.m */; };
 		728550AD1938EBC50032A754 /* RWTFlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 728550AC1938EBC50032A754 /* RWTFlickrPhoto.m */; };
+		728550B0193BA0810032A754 /* RWTSearchResultsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 728550AF193BA0810032A754 /* RWTSearchResultsViewModel.m */; };
 		728550B5193E52740032A754 /* CETableViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 728550B4193E52740032A754 /* CETableViewBindingHelper.m */; };
 		72E40170192BFFCE00354806 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E4016F192BFFCE00354806 /* Foundation.framework */; };
 		72E40172192BFFCE00354806 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E40171192BFFCE00354806 /* CoreGraphics.framework */; };
@@ -64,6 +65,8 @@
 		728550A91938EB5E0032A754 /* RWTFlickrSearchResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchResults.m; sourceTree = "<group>"; };
 		728550AB1938EBC50032A754 /* RWTFlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTFlickrPhoto.h; sourceTree = "<group>"; };
 		728550AC1938EBC50032A754 /* RWTFlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrPhoto.m; sourceTree = "<group>"; };
+		728550AE193BA0810032A754 /* RWTSearchResultsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTSearchResultsViewModel.h; sourceTree = "<group>"; };
+		728550AF193BA0810032A754 /* RWTSearchResultsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSearchResultsViewModel.m; sourceTree = "<group>"; };
 		72E4016C192BFFCE00354806 /* RWTFlickrSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWTFlickrSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E4016F192BFFCE00354806 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		72E40171192BFFCE00354806 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -238,6 +241,8 @@
 				72405AD019346F5800AB4E47 /* RWTFlickrSearchViewModel.h */,
 				72405AD119346F5800AB4E47 /* RWTFlickrSearchViewModel.m */,
 				7285509F193732D20032A754 /* RWTViewModelServices.h */,
+				728550AE193BA0810032A754 /* RWTSearchResultsViewModel.h */,
+				728550AF193BA0810032A754 /* RWTSearchResultsViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -401,6 +406,7 @@
 				72E401BE192C050F00354806 /* RWTSearchResultsTableViewCell.m in Sources */,
 				72405AD219346F5800AB4E47 /* RWTFlickrSearchViewModel.m in Sources */,
 				72E401B7192C03AB00354806 /* RWTRecentSearchItemTableViewCell.m in Sources */,
+				728550B0193BA0810032A754 /* RWTSearchResultsViewModel.m in Sources */,
 				72E4017C192BFFCE00354806 /* main.m in Sources */,
 				72E401B9192C03AB00354806 /* RWTSearchResultsViewController.m in Sources */,
 				728550B5193E52740032A754 /* CETableViewBindingHelper.m in Sources */,
