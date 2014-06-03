@@ -4,7 +4,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CEReactiveView.h"
 
-@interface RWTSearchResultsTableViewCell : UITableViewCell
+@interface RWTSearchResultsTableViewCell : UITableViewCell <CEReactiveView>
 
 @end
