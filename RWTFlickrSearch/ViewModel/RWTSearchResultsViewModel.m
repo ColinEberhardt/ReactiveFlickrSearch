@@ -8,6 +8,8 @@
 
 #import "RWTSearchResultsViewModel.h"
 #import "RWTFlickrPhoto.h"
+#import <LinqToObjectiveC/NSArray+LinqExtensions.h>
+#import "RWTSearchResultsItemViewModel.h"
 
 @implementation RWTSearchResultsViewModel
 
@@ -15,14 +17,11 @@
                              services:(id<RWTViewModelServices>)services {
   if (self = [super init]) {
     _title = results.searchString;
-    _searchResults = results.photos;
-    
-    RWTFlickrPhoto *photo = results.photos.firstObject;
-    RACSignal *metaDataSignal = [[services getFlickrSearchService]
-                                 flickrImageMetadata:photo.identifier];
-    [metaDataSignal subscribeNext:^(id x) {
-      NSLog(@"%@", x);
-    }];
+    _searchResults =
+      [results.photos linq_select:^id(RWTFlickrPhoto *photo) {
+        return [[RWTSearchResultsItemViewModel alloc]
+                  initWithPhoto:photo services:services];
+      }];
   }
   return self;
 }
