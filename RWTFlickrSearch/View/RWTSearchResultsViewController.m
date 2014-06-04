@@ -6,8 +6,9 @@
 #import "RWTSearchResultsViewController.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "CETableViewBindingHelper.h"
+#import "RWTSearchResultsTableViewCell.h"
 
-@interface RWTSearchResultsViewController ()
+@interface RWTSearchResultsViewController () <UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *searchResultsTable;
 
@@ -41,6 +42,17 @@
                                          sourceSignal:RACObserve(self.viewModel, searchResults)
                                      selectionCommand:nil
                                          templateCell:nib];
+  
+  self.bindingHelper.delegate = self;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+  NSArray *cells = [self.searchResultsTable visibleCells];
+  for (RWTSearchResultsTableViewCell *cell in cells) {
+    CGFloat value = -40 + (cell.frame.origin.y - self.searchResultsTable.contentOffset.y) / 5;
+    [cell setParallax:value];
+  }
 }
 
 

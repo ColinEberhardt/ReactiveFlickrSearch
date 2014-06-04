@@ -8,4 +8,6 @@
 
 @interface RWTSearchResultsTableViewCell : UITableViewCell <CEReactiveView>
 
+- (void) setParallax:(CGFloat)value;
+
 @end
