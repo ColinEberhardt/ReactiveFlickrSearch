@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		723747B4193F55F2004C24D3 /* RWTPreviousSearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 723747B3193F55F2004C24D3 /* RWTPreviousSearchViewModel.m */; };
 		72405AD219346F5800AB4E47 /* RWTFlickrSearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72405AD119346F5800AB4E47 /* RWTFlickrSearchViewModel.m */; };
 		7285509E193731BC0032A754 /* RWTFlickrSearchImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7285509D193731BC0032A754 /* RWTFlickrSearchImpl.m */; };
 		728550A2193734090032A754 /* RWTViewModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 728550A1193734090032A754 /* RWTViewModelServicesImpl.m */; };
@@ -52,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		723747B2193F55F2004C24D3 /* RWTPreviousSearchViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTPreviousSearchViewModel.h; sourceTree = "<group>"; };
+		723747B3193F55F2004C24D3 /* RWTPreviousSearchViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTPreviousSearchViewModel.m; sourceTree = "<group>"; };
 		72405AD019346F5800AB4E47 /* RWTFlickrSearchViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearchViewModel.h; sourceTree = "<group>"; };
 		72405AD119346F5800AB4E47 /* RWTFlickrSearchViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchViewModel.m; sourceTree = "<group>"; };
 		7285509B1937317F0032A754 /* RWTFlickrSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearch.h; sourceTree = "<group>"; };
@@ -251,6 +254,8 @@
 				728550AF193BA0810032A754 /* RWTSearchResultsViewModel.m */,
 				728550B9193EE65B0032A754 /* RWTSearchResultsItemViewModel.h */,
 				728550BA193EE65B0032A754 /* RWTSearchResultsItemViewModel.m */,
+				723747B2193F55F2004C24D3 /* RWTPreviousSearchViewModel.h */,
+				723747B3193F55F2004C24D3 /* RWTPreviousSearchViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -423,6 +428,7 @@
 				72E401B9192C03AB00354806 /* RWTSearchResultsViewController.m in Sources */,
 				728550B5193E52740032A754 /* CETableViewBindingHelper.m in Sources */,
 				72E401B4192C03AB00354806 /* RWTFlickrSearchViewController.m in Sources */,
+				723747B4193F55F2004C24D3 /* RWTPreviousSearchViewModel.m in Sources */,
 				728550AD1938EBC50032A754 /* RWTFlickrPhoto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

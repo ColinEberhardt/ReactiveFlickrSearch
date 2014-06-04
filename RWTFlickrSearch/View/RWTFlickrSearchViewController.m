@@ -5,6 +5,7 @@
 
 #import "RWTFlickrSearchViewController.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import "CETableViewBindingHelper.h"
 
 @interface RWTFlickrSearchViewController ()
 
@@ -14,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingIndicator;
 
 @property (weak, nonatomic) RWTFlickrSearchViewModel *viewModel;
+@property (strong, nonatomic) CETableViewBindingHelper *bindingHelper;
 
 @end
 
@@ -63,6 +65,14 @@
                      otherButtonTitles:nil];
     [alert show];
   }];
+  
+  UINib *nib = [UINib nibWithNibName:@"RWTRecentSearchItemTableViewCell" bundle:nil];
+  self.bindingHelper = [CETableViewBindingHelper bindingHelperForTableView:self.searchHistoryTable
+                                                              sourceSignal:RACObserve(self.viewModel, previousSearches)
+                                                          selectionCommand:nil
+                                                              templateCell:nib];
+  
+
 }
 
 @end

@@ -5,6 +5,8 @@
 
 #import "RWTRecentSearchItemTableViewCell.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "RWTPreviousSearchViewModel.h"
 
 @interface RWTRecentSearchItemTableViewCell ()
 
@@ -15,5 +17,16 @@
 @end
 
 @implementation RWTRecentSearchItemTableViewCell
+
+- (void)bindViewModel:(id)viewModel {
+  RWTPreviousSearchViewModel *previousSearch = viewModel;
+  self.searchLabel.text = previousSearch.searchString;
+  
+  NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+  [numberFormatter setNumberStyle: NSNumberFormatterDecimalStyle];
+  NSString *numberAsString = [numberFormatter stringFromNumber:@(previousSearch.totalResults)];
+  self.totalResultsLabel.text = numberAsString;
+  [self.thumbnailImage setImageWithURL:previousSearch.thumbnail];
+}
 
 @end

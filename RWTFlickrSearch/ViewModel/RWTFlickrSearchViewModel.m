@@ -8,11 +8,14 @@
 
 #import "RWTFlickrSearchViewModel.h"
 #import "RWTSearchResultsViewModel.h"
+#import "RWTPreviousSearchViewModel.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import <LinqToObjectiveC/NSArray+LinqExtensions.h>
 
 @interface RWTFlickrSearchViewModel ()
 
 @property (weak, nonatomic) id<RWTViewModelServices> services;
+@property NSMutableArray *mutablePreviousSearches;
 
 @end
 
@@ -49,6 +52,9 @@
       }];
   
   self.connectionErrors = self.executeSearch.errors;
+  
+  self.mutablePreviousSearches = [NSMutableArray new];
+  self.previousSearches = [NSArray new];
 }
 
 -(RACSignal *)executeSearchSignal {
@@ -59,7 +65,33 @@
         [[RWTSearchResultsViewModel alloc] initWithSearchResults:result
                                                         services:self.services];
       [self.services pushViewModel:resultsViewModel];
+      [self addToSearchHistory:result];
     }];
+}
+
+
+- (void)addToSearchHistory:(RWTFlickrSearchResults *)result {
+  
+  RWTPreviousSearchViewModel* match = [[self.previousSearches linq_where:^BOOL(RWTPreviousSearchViewModel *x) {
+    return x.searchString == result.searchString;
+  }] linq_firstOrNil];
+  
+  if (match) {
+    [self.mutablePreviousSearches removeObject:match];
+    [self.mutablePreviousSearches insertObject:match atIndex:0];
+  } else {
+    RWTPreviousSearchViewModel *previousSearch = [RWTPreviousSearchViewModel new];
+    previousSearch.searchString = result.searchString;
+    previousSearch.totalResults = result.totalResults;
+    previousSearch.thumbnail = [[result.photos firstObject] url];
+    [self.mutablePreviousSearches insertObject:previousSearch atIndex:0];
+  }
+  
+  if (self.mutablePreviousSearches.count > 10) {
+    [self.mutablePreviousSearches removeLastObject];
+  }
+  
+  self.previousSearches = [NSArray arrayWithArray:self.mutablePreviousSearches];
 }
 
 @end

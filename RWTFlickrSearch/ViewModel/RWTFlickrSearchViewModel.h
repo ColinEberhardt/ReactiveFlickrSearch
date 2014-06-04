@@ -18,6 +18,7 @@
 @property (strong, nonatomic) NSString *searchText;
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) RACSignal *connectionErrors;
+@property (strong, nonatomic) NSArray *previousSearches;
 
 
 @end
