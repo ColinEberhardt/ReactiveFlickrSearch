@@ -7,6 +7,7 @@
 //
 
 #import "RWTSearchResultsViewModel.h"
+#import "RWTFlickrPhoto.h"
 
 @implementation RWTSearchResultsViewModel
 
@@ -15,6 +16,13 @@
   if (self = [super init]) {
     _title = results.searchString;
     _searchResults = results.photos;
+    
+    RWTFlickrPhoto *photo = results.photos.firstObject;
+    RACSignal *metaDataSignal = [[services getFlickrSearchService]
+                                 flickrImageMetadata:photo.identifier];
+    [metaDataSignal subscribeNext:^(id x) {
+      NSLog(@"%@", x);
+    }];
   }
   return self;
 }

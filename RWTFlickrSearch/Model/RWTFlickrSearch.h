@@ -13,4 +13,6 @@
 
 - (RACSignal *)flickrSearchSignal:(NSString *)searchString;
 
+- (RACSignal *)flickrImageMetadata:(NSString *)photoId;
+
 @end
