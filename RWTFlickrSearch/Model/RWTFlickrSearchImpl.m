@@ -122,12 +122,12 @@
                                           return total;
                                         }];
   
-  return [RACSignal combineLatest:@[favourites, comments] reduce:^id(NSString *favs, NSString *coms){
+  return [[RACSignal combineLatest:@[favourites, comments] reduce:^id(NSString *favs, NSString *coms){
     RWTFlickrPhototMetadata *meta = [RWTFlickrPhototMetadata new];
     meta.comments = [coms integerValue];
     meta.favourites = [favs integerValue];
     return  meta;
-  }];
+  }] logAll];
 }
      
 

@@ -40,6 +40,9 @@
   }];
   
   photo.isVisible = YES;
+  [self.rac_prepareForReuseSignal subscribeNext:^(id x) {
+    photo.isVisible = NO;
+  }];
 }
 
 - (void)setParallax:(CGFloat)value {

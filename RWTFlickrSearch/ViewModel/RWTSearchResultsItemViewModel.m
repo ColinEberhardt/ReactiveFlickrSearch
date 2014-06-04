@@ -34,12 +34,21 @@
 }
 
 - (void)initialize {
-  RACSignal *fetchMetadata =
-    [RACObserve(self, isVisible)
-     filter:^BOOL(NSNumber *visible) {
-       return [visible boolValue];
-     }];
   
+  RACSignal *visibleStateChanged = [RACObserve(self, isVisible) skip:1];
+
+  RACSignal *visibleSignal = [visibleStateChanged filter:^BOOL(NSNumber *value) {
+    return [value boolValue];
+  }];
+
+  RACSignal *hiddenSignal = [visibleStateChanged filter:^BOOL(NSNumber *value) {
+    return ![value boolValue];
+  }];
+
+  RACSignal *fetchMetadata = [[visibleSignal delay:1.0f]
+                             takeUntil:hiddenSignal];
+
+    
   @weakify(self)
   [fetchMetadata subscribeNext:^(id x) {
     @strongify(self)
