@@ -47,6 +47,8 @@
       signalBlock:^RACSignal *(id input) {
         return  [self executeSearchSignal];
       }];
+  
+  self.connectionErrors = self.executeSearch.errors;
 }
 
 -(RACSignal *)executeSearchSignal {

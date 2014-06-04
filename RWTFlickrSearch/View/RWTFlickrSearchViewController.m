@@ -53,6 +53,16 @@
     subscribeNext:^(id x) {
       [self.searchTextField resignFirstResponder];
     }];
+  
+  [self.viewModel.connectionErrors subscribeNext:^(NSError *error) {
+    UIAlertView *alert =
+    [[UIAlertView alloc] initWithTitle:@"Connection Error"
+                               message:@"There was a problem reaching Flickr."
+                              delegate:nil
+                     cancelButtonTitle:@"OK"
+                     otherButtonTitles:nil];
+    [alert show];
+  }];
 }
 
 @end

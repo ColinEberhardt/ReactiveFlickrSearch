@@ -50,6 +50,14 @@
     flickrRequest.delegate = self;
     [self.requests addObject:flickrRequest];
     
+    RACSignal *errorSignal =
+      [self rac_signalForSelector:@selector(flickrAPIRequest:didFailWithError:)
+                     fromProtocol:@protocol(OFFlickrAPIRequestDelegate)];
+
+    [errorSignal subscribeNext:^(RACTuple *tuple) {
+      [subscriber sendError:tuple.second];
+    }];
+    
     // 3. Create a signal from the delegate method
     RACSignal *successSignal =
       [self rac_signalForSelector:@selector(flickrAPIRequest:didCompleteWithResponse:)

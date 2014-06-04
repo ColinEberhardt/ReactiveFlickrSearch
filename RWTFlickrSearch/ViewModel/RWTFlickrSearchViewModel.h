@@ -17,5 +17,7 @@
 @property (strong, nonatomic) RACCommand *executeSearch;
 @property (strong, nonatomic) NSString *searchText;
 @property (strong, nonatomic) NSString *title;
+@property (strong, nonatomic) RACSignal *connectionErrors;
+
 
 @end
